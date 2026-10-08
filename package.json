@@ -1,0 +1,9 @@
+{
+  "name": "preciazo-landing-page",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "check": "node scripts/check-i18n.mjs",
+    "build": "npm run check && node scripts/build.mjs"
+  }
+}

@@ -1,3 +1,5 @@
+import { t } from "./i18n.js";
+
 (() => {
   "use strict";
 
@@ -8,13 +10,13 @@
     const closeMenu = () => {
       navigation.classList.remove("is-open");
       menuToggle.setAttribute("aria-expanded", "false");
-      menuToggle.setAttribute("aria-label", "Abrir menú de navegación");
+      menuToggle.setAttribute("aria-label", t("menu.open"));
     };
 
     menuToggle.addEventListener("click", () => {
       const isOpen = navigation.classList.toggle("is-open");
       menuToggle.setAttribute("aria-expanded", String(isOpen));
-      menuToggle.setAttribute("aria-label", isOpen ? "Cerrar menú de navegación" : "Abrir menú de navegación");
+      menuToggle.setAttribute("aria-label", t(isOpen ? "menu.close" : "menu.open"));
     });
 
     navigation.querySelectorAll("a").forEach((link) => link.addEventListener("click", closeMenu));
@@ -45,8 +47,11 @@
   document.querySelectorAll("[data-demo-form], [data-contact-form]").forEach((form) => {
     form.addEventListener("submit", (event) => {
       event.preventDefault();
-      const status = form.querySelector("[data-form-status], [data-contact-status]");
-      if (status) status.textContent = form.matches("[data-contact-form]") ? "Gracias por escribirnos. Te responderemos pronto." : "¡Listo! Te avisaremos antes del lanzamiento.";
+      const status = form.querySelector("[data-contact-status]") ?? form.parentElement.querySelector("[data-form-status]");
+      if (status) {
+        status.dataset.statusKey = form.matches("[data-contact-form]") ? "form.contact.success" : "form.launch.success";
+        status.textContent = t(status.dataset.statusKey);
+      }
       form.reset();
     });
   });
