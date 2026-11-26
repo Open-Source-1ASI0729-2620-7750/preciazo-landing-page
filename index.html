@@ -1,12 +1,12 @@
 <!doctype html>
-<html lang="es">
+<html lang="en-US">
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Preciazo | Compara precios y optimiza tus compras</title>
-    <meta name="description" content="Compara precios reales, organiza tu canasta básica y optimiza tus rutas de compra con Preciazo.">
-    <meta name="keywords" content="Preciazo, comparar precios, canasta básica, rutas de compra, comercios aliados">
-    <meta name="author" content="Preciazo">
+    <title>Preciazo | Compare prices and optimize your shopping routes</title>
+    <meta name="description" content="Compare real grocery prices, organize your shopping basket, and optimize multi-stop routes in Lima Metropolitana with Preciazo.">
+    <meta name="keywords" content="Preciazo, price comparison, grocery basket, route optimization, retail merchants, PeruTech">
+    <meta name="author" content="PeruTech — Preciazo">
     <meta name="robots" content="index, follow">
     <meta name="theme-color" content="#00acac">
     <meta property="og:title" content="Preciazo | Compara precios y optimiza tus compras">
@@ -35,15 +35,17 @@
           <i class="bi bi-list" aria-hidden="true"></i>
         </button>
 
-        <nav class="primary-navigation" id="primary-navigation" aria-label="Navegación principal">
-          <a class="nav-link is-active" href="#producto">Producto</a>
-          <a class="nav-link" href="#como-funciona">Cómo funciona</a>
-          <a class="nav-link" href="#comercios">Comercios</a>
-          <a class="nav-link" href="#planes">Planes y precios</a>
-          <a class="nav-link" href="#preguntas">Preguntas</a>
-          <a class="nav-link" href="#contacto">Contáctanos</a>
-          <a class="button button-small button-outline" href="#acceso">Acceso</a>
-          <a class="button button-small button-primary" href="#compradores">Planificar mi Canasta</a>
+        <nav class="primary-navigation" id="primary-navigation" aria-label="Main navigation">
+          <a class="nav-link is-active" href="#producto" data-i18n="nav.product">Product</a>
+          <a class="nav-link" href="#como-funciona" data-i18n="nav.how">How it works</a>
+          <a class="nav-link" href="#comercios" data-i18n="nav.merchants">Merchants</a>
+          <a class="nav-link" href="#videos" data-i18n="nav.videos">Videos</a>
+          <a class="nav-link" href="#planes" data-i18n="nav.pricing">Plans & Pricing</a>
+          <a class="nav-link" href="#preguntas" data-i18n="nav.faq">FAQ</a>
+          <a class="nav-link" href="#contacto" data-i18n="nav.contact">Contact</a>
+          <button class="lang-switch" type="button" data-lang-toggle aria-label="Switch language between English and Spanish">EN / ES</button>
+          <a class="button button-small button-outline" href="https://purple-sand-0df2c4410.6.azurestaticapps.net/#/login?role=merchant" target="_blank" rel="noopener noreferrer" data-i18n="nav.merchantCta">Merchant Portal</a>
+          <a class="button button-small button-primary" href="https://purple-sand-0df2c4410.6.azurestaticapps.net/#/login?role=buyer" target="_blank" rel="noopener noreferrer" data-i18n="nav.buyerCta">Open Web App</a>
         </nav>
       </div>
     </header>
@@ -52,17 +54,17 @@
       <section class="hero-section section-white" aria-labelledby="hero-title">
         <div class="container hero-grid">
           <div class="hero-copy">
-            <p class="eyebrow"><span class="eyebrow-dot"></span> Plataforma de Compras Inteligentes · Perú</p>
-            <h1 id="hero-title">Ahorra en tu <span>Canasta Básica</span> con Rutas Multiparada y Precios Reales</h1>
-            <p class="hero-lead">Planifica tu Lista Compartida, respeta tu Presupuesto de Compra y optimiza tus desplazamientos conectando los comercios minoristas con el menor precio.</p>
+            <p class="eyebrow"><span class="eyebrow-dot"></span> <span data-i18n="hero.eyebrow">Smart Shopping Platform · Peru</span></p>
+            <h1 id="hero-title" data-i18n="hero.title">Save on your <span>Grocery Basket</span> with Multi-Stop Routes and Real Prices</h1>
+            <p class="hero-lead" data-i18n="hero.lead">Plan your shopping list, respect your budget limit, and optimize your urban itinerary across nearby retail stores with verified prices.</p>
             <div class="hero-actions">
-              <a class="button button-primary" href="#compradores">Descargar App Comprador <i class="bi bi-arrow-right" aria-hidden="true"></i></a>
-              <a class="button button-outline" href="#comercios">Únete como Comercio</a>
+              <a class="button button-primary" href="https://purple-sand-0df2c4410.6.azurestaticapps.net/#/login?role=buyer" target="_blank" rel="noopener noreferrer"><span data-i18n="hero.ctaBuyer">Start as Buyer</span> <i class="bi bi-arrow-right" aria-hidden="true"></i></a>
+              <a class="button button-outline" href="https://purple-sand-0df2c4410.6.azurestaticapps.net/#/login?role=merchant" target="_blank" rel="noopener noreferrer" data-i18n="hero.ctaMerchant">Join as Merchant</a>
             </div>
-            <div class="hero-proof" aria-label="Beneficios principales">
-              <span><i class="bi bi-check-circle-fill" aria-hidden="true"></i> Precios actualizados</span>
-              <span><i class="bi bi-check-circle-fill" aria-hidden="true"></i> Rutas inteligentes</span>
-              <span><i class="bi bi-check-circle-fill" aria-hidden="true"></i> Comunidad activa</span>
+            <div class="hero-proof" aria-label="Core benefits">
+              <span><i class="bi bi-check-circle-fill" aria-hidden="true"></i> <span data-i18n="hero.proof1">Verified prices</span></span>
+              <span><i class="bi bi-check-circle-fill" aria-hidden="true"></i> <span data-i18n="hero.proof2">Smart OSRM routes</span></span>
+              <span><i class="bi bi-check-circle-fill" aria-hidden="true"></i> <span data-i18n="hero.proof3">Active community</span></span>
             </div>
           </div>
 
@@ -98,7 +100,7 @@
                 <li>Presupuesto y alertas de ahorro</li>
                 <li>Recomendaciones de comercios aliados</li>
               </ul>
-              <a class="button button-primary button-full" href="#compradores">Soy Comprador</a>
+              <a class="button button-primary button-full" href="https://purple-sand-0df2c4410.6.azurestaticapps.net/#/login?role=buyer" target="_blank" rel="noopener noreferrer" data-i18n="profile.buyerCta">Enter Buyer Portal</a>
             </article>
 
             <article class="profile-card profile-card-featured">
@@ -112,7 +114,7 @@
                 <li>Inteligencia sobre demanda y competencia</li>
                 <li>Panel de analítica para decisiones</li>
               </ul>
-              <a class="button button-primary button-full" href="#comercios">Registrar mi Comercio</a>
+              <a class="button button-primary button-full" href="https://purple-sand-0df2c4410.6.azurestaticapps.net/#/login?role=merchant" target="_blank" rel="noopener noreferrer" data-i18n="profile.merchantCta">Enter Merchant Portal</a>
             </article>
           </div>
         </div>
@@ -253,10 +255,52 @@
         </div></div>
       </section>
 
+      <section class="videos-section section-white" id="videos" aria-labelledby="videos-title">
+        <div class="container">
+          <div class="section-heading centered-heading">
+            <p class="eyebrow" data-i18n="videos.eyebrow">Discover Preciazo in Action</p>
+            <h2 id="videos-title" data-i18n="videos.title">About the Product &amp; About the Team</h2>
+            <p data-i18n="videos.subtitle">Watch how Preciazo helps Lima buyers and local merchants save time and money, and meet the PeruTech engineering team.</p>
+          </div>
+          <div class="videos-grid">
+            <article class="video-card">
+              <h3 data-i18n="videos.productTitle">About the Product</h3>
+              <div class="video-frame">
+                <iframe
+                  src="https://www.youtube.com/embed/XjwbQpADie8"
+                  title="Preciazo — Video About the Product"
+                  loading="lazy"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                  allowfullscreen></iframe>
+              </div>
+              <p data-i18n="videos.productDesc">Value proposition, multi-store basket comparison, OSRM route planning, and user validation highlights.</p>
+            </article>
+            <article class="video-card">
+              <h3 data-i18n="videos.teamTitle">About the Team — PeruTech</h3>
+              <div class="video-frame video-placeholder" role="region" aria-label="About the Team retrospective video">
+                <i class="bi bi-people-fill" aria-hidden="true"></i>
+                <p data-i18n="videos.teamPlaceholder">PeruTech Team Retrospective Video (YouTube embed ready for Sprint 4 release)</p>
+              </div>
+              <p data-i18n="videos.teamDesc">Behind the scenes of our Scrum sprints, DDD architecture, and engineering process at UPC.</p>
+            </article>
+          </div>
+        </div>
+      </section>
+
       <section class="contact-section section-muted" id="contacto" aria-labelledby="contact-title"><div class="container contact-grid"><div class="contact-copy"><p class="eyebrow">Soporte y consultas</p><h2 id="contact-title">Contáctanos</h2><p>¿Tienes preguntas sobre la plataforma, necesitas soporte técnico o quieres explorar una alianza comercial? Escríbenos y te responderemos en menos de 24 horas.</p><div class="contact-detail"><i class="bi bi-envelope" aria-hidden="true"></i><span>perutech@perutech.com</span></div><div class="contact-detail"><i class="bi bi-geo-alt" aria-hidden="true"></i><span>Lima, Perú</span></div></div><form class="contact-form" data-contact-form><div class="form-field"><label for="contact-name">Nombre completo</label><input id="contact-name" name="name" type="text" autocomplete="name" placeholder="María García" required></div><div class="form-field"><label for="contact-email">Correo electrónico</label><input id="contact-email" name="email" type="email" autocomplete="email" placeholder="maria@ejemplo.com" required></div><div class="form-field"><label for="contact-message">Mensaje</label><textarea id="contact-message" name="message" rows="5" placeholder="Cuéntanos tu consulta, problema técnico o propuesta de alianza comercial..." required></textarea></div><button class="button button-primary button-full" type="submit">Enviar mensaje</button><p class="form-status" data-contact-status role="status" aria-live="polite"></p></form></div></section>
     </main>
 
-     <footer class="site-footer"><div class="container footer-grid"><div><a class="brand brand-footer" href="#inicio"><span class="brand-mark" aria-hidden="true"><i class="bi bi-cart3"></i></span><span><strong>Precia</strong><em>zo</em></span></a><p>Plataforma de compras inteligentes para ahorrar mejor y conectar comercios.</p></div><div><h3>Producto</h3><a href="#como-funciona">Cómo funciona</a><a href="#compradores">Para compradores</a><a href="#comercios">Para comercios</a><a href="#planes">Planes y precios</a></div><div><h3>Legal</h3><a href="#contacto">Política de Privacidad</a><a href="#contacto">Términos de Uso</a><a href="#preguntas">Preguntas Frecuentes</a><a href="#contacto">Contacto y soporte</a></div><div><h3>Contáctanos</h3><a href="mailto:perutech@perutech.com">perutech@perutech.com</a><span>Lima, Perú</span><div class="social-links" aria-label="Redes sociales"><a href="#contacto" aria-label="Preciazo en LinkedIn"><i class="bi bi-linkedin" aria-hidden="true"></i></a><a href="#contacto" aria-label="Preciazo en Instagram"><i class="bi bi-instagram" aria-hidden="true"></i></a><a href="#contacto" aria-label="Preciazo en X"><i class="bi bi-twitter-x" aria-hidden="true"></i></a></div></div></div><div class="container footer-bottom"><span>© <span data-current-year>2026</span> Preciazo. Todos los derechos reservados.</span><span>Hecho con <i class="bi bi-heart-fill" aria-hidden="true"></i> en Lima, Perú.</span></div></footer>
+     <footer class="site-footer"><div class="container footer-grid"><div><a class="brand brand-footer" href="#inicio"><span class="brand-mark" aria-hidden="true"><i class="bi bi-cart3"></i></span><span><strong>Precia</strong><em>zo</em></span></a><p>Plataforma de compras inteligentes para ahorrar mejor y conectar comercios.</p></div><div><h3>Producto</h3><a href="#como-funciona">Cómo funciona</a><a href="#compradores">Para compradores</a><a href="#comercios">Para comercios</a><a href="#planes">Planes y precios</a></div><div><h3>Legal</h3><a href="#contacto" data-open-terms data-i18n="footer.privacy">Privacy Policy</a><a href="#contacto" data-open-terms data-i18n="footer.terms">Terms &amp; Conditions of Service</a><a href="#preguntas">FAQ</a><a href="#contacto">Support</a></div><div><h3>Contáctanos</h3><a href="mailto:perutech@perutech.com">perutech@perutech.com</a><span>Lima, Perú</span><div class="social-links" aria-label="Redes sociales"><a href="#contacto" aria-label="Preciazo en LinkedIn"><i class="bi bi-linkedin" aria-hidden="true"></i></a><a href="#contacto" aria-label="Preciazo en Instagram"><i class="bi bi-instagram" aria-hidden="true"></i></a><a href="#contacto" aria-label="Preciazo en X"><i class="bi bi-twitter-x" aria-hidden="true"></i></a></div></div></div><div class="container footer-bottom"><span>© <span data-current-year>2026</span> Preciazo. Todos los derechos reservados.</span><span>Hecho con <i class="bi bi-heart-fill" aria-hidden="true"></i> en Lima, Perú.</span></div></footer>
+
+    <div class="terms-modal" id="terms-modal" role="dialog" aria-modal="true" aria-labelledby="terms-modal-title" hidden>
+      <div class="terms-modal-card">
+        <h3 id="terms-modal-title" data-i18n="terms.title">Terms and Conditions of Service</h3>
+        <p data-i18n="terms.body1">Preciazo (PeruTech) is developed and operated under the principles of the ACM/IEEE Software Engineering Code of Ethics and the Code of Ethics of the Colegio de Ingenieros del Perú (CIP).</p>
+        <p data-i18n="terms.body2">We guarantee transparency in price comparison, protect user credentials with BCrypt and stateless JWT authentication, and promote inclusive web accessibility (a11y/ARIA) and bilingual internationalization (en_US, es_419).</p>
+        <p data-i18n="terms.body3">Users commit to submitting truthful shelf price observations and respecting merchant and community integrity.</p>
+        <button class="button button-primary" type="button" data-close-terms data-i18n="terms.close">Close</button>
+      </div>
+    </div>
 
     <script src="js/main.js" defer></script>
   </body>
